@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Jugador : MonoBehaviour
 {
     [SerializeField]
     private float Speed;
+
+    //public int puntos;
+    //public Text TxTpuntos;
 
     public Jugador()
     {
@@ -28,6 +32,8 @@ public class Jugador : MonoBehaviour
     void Update()
     {
         Move();
+
+       // TxTpuntos.text = "Puntos:" + puntos;
     }
 
     public Jugador(int Speed, int vid, float Spee, int daño)

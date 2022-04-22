@@ -7,11 +7,11 @@ public class movrieles : MonoBehaviour
 
     public float speed;
     Vector2 nuevapos;
-    public float riel = 0;
+    public int riel = 0;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        nuevapos.y = 2.36f;
     }
 
     // Update is called once per frame
@@ -27,7 +27,24 @@ public class movrieles : MonoBehaviour
             riel--;
         }
 
-        //riel == riel.clamp
+        riel = Mathf.Clamp(riel, -2, 2);
+
+        if (riel == -2)
+            nuevapos.x = -8;
+
+        if (riel == -1)
+            nuevapos.x = -4;
+
+        if (riel == 0)
+            nuevapos.x = 0;
+
+        if (riel == 1)
+            nuevapos.x = 4;
+
+        if (riel == 2)
+            nuevapos.x = 8;
+
+        transform.position = nuevapos;
     }
 
     
