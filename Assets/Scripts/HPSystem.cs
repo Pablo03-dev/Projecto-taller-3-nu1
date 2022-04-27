@@ -7,10 +7,17 @@ public class HPSystem : MonoBehaviour
 	[SerializeField] private int health = 3;
 	[SerializeField] private int maxHealth = 3;
 
+	public Lives vida_canvas;
+	public int vida = 3;
+
 	private void Start()
 	{
 		maxHealth = health;
+
+		vida_canvas = GameObject.FindObjectOfType<Lives>(); 
 	}
+
+	
 
 	public void PlusHealth(int amount)
 	{
@@ -18,6 +25,8 @@ public class HPSystem : MonoBehaviour
 		{
 			health = maxHealth;
 		}
+
+		vida_canvas.CambioVida((int)health);
 	}
 
 	public void TakeHealth(int amount)
@@ -45,4 +54,9 @@ public class HPSystem : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
+
+    private void Update()
+    {
+        //vida_canvas.CambioVida(vida);
+    }
 }

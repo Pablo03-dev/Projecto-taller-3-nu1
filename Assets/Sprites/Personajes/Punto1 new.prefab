@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7551710074980167702}
   m_Layer: 0
-  m_Name: Punto 1
+  m_Name: Punto1 new
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
