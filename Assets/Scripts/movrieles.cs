@@ -11,7 +11,7 @@ public class movrieles : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        nuevapos.y = 2.36f;
+        nuevapos.y = 3.36f;
     }
 
     // Update is called once per frame
@@ -30,19 +30,19 @@ public class movrieles : MonoBehaviour
         riel = Mathf.Clamp(riel, -2, 2);
 
         if (riel == -2)
-            nuevapos.x = -8;
+            nuevapos.x = -9.7f;
 
         if (riel == -1)
-            nuevapos.x = -4;
+            nuevapos.x = -3.2f;
 
         if (riel == 0)
             nuevapos.x = 0;
 
         if (riel == 1)
-            nuevapos.x = 4;
+            nuevapos.x = 3.2f;
 
         if (riel == 2)
-            nuevapos.x = 8;
+            nuevapos.x = 8.5f;
 
         transform.position = nuevapos;
     }
