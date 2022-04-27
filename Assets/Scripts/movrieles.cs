@@ -6,45 +6,31 @@ public class movrieles : MonoBehaviour
 {
 
     public float speed;
+    public float distanciaRiel;
     Vector2 nuevapos;
-    public int riel = 0;
-    // Start is called before the first frame update
+    public float distanciaMax;
+
     private void Start()
     {
-        nuevapos.y = 3.36f;
+        nuevapos.y = transform.position.y;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.RightArrow) )
         {
-            riel++;
+            nuevapos.x += distanciaRiel;
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            riel--;
+           nuevapos.x -= distanciaRiel;
         }
 
-        riel = Mathf.Clamp(riel, -2, 2);
+        nuevapos.x = Mathf.Clamp(nuevapos.x, 0, distanciaMax);
 
-        if (riel == -2)
-            nuevapos.x = -9.7f;
 
-        if (riel == -1)
-            nuevapos.x = -3.2f;
 
-        if (riel == 0)
-            nuevapos.x = 0;
-
-        if (riel == 1)
-            nuevapos.x = 3.2f;
-
-        if (riel == 2)
-            nuevapos.x = 8.5f;
-
-        transform.position = nuevapos;
+        transform.position = Vector2.MoveTowards(transform.position, nuevapos, speed * Time.deltaTime);
     }
 
     

@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        timeToSpawn = Random.Range(2f, 7f);
     }
 
     // Update is called once per frame
@@ -22,9 +22,11 @@ public class Spawner : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= timeToSpawn && aux == null)
         {
-            aux = Instantiate(objeto);
+            aux = Instantiate(objeto, transform.position, Quaternion.identity);
             timer = 0f;
-          // Destroy(objeto, 6f);
+            timeToSpawn = Random.Range(2f, 7f);
+            aux = null;
+            // Destroy(objeto, 6f);
         }
     }
 }
