@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 9058884510061538796}
   - component: {fileID: 9058884510061538799}
   - component: {fileID: 662414601808709727}
+  - component: {fileID: 2381837940390220904}
   m_Layer: 0
   m_Name: puerta salida 2
   m_TagString: Untagged
@@ -314,6 +315,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &2381837940390220904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058884510061538798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817c4bcfd1eda394787fb8da83ed4082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onEnter: []
+  onStay: []
+  onExit: []
 --- !u!1 &9058884510490453921
 GameObject:
   m_ObjectHideFlags: 0

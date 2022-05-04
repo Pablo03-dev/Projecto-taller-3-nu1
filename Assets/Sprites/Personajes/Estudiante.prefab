@@ -44,9 +44,12 @@ GameObject:
   - component: {fileID: 8289599043282542446}
   - component: {fileID: 7407735623795778785}
   - component: {fileID: 426217527880393674}
+  - component: {fileID: -1751254869222415382}
+  - component: {fileID: 4296965424045555042}
+  - component: {fileID: 8106890158313149496}
   m_Layer: 0
   m_Name: Estudiante
-  m_TagString: Untagged
+  m_TagString: estudiante
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -174,3 +177,67 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.31}
   m_EdgeRadius: 0
+--- !u!114 &-1751254869222415382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8289599043282542441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817c4bcfd1eda394787fb8da83ed4082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onEnter:
+  - tag: Puerta
+    eventos:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8106890158313149496}
+          m_TargetAssemblyTypeName: Desactivar, Assembly-CSharp
+          m_MethodName: DesactivarObjeto
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  onStay: []
+  onExit: []
+--- !u!50 &4296965424045555042
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8289599043282542441}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &8106890158313149496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8289599043282542441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d089c6965822e6e4487aae977ee826f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

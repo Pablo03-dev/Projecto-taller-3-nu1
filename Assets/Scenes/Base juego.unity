@@ -696,6 +696,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1484088388}
     m_Modifications:
+    - target: {fileID: 662414601808709727, guid: 9c6e247ad132384418972aac637350d4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9058884509144430888, guid: 9c6e247ad132384418972aac637350d4, type: 3}
       propertyPath: m_Name
       value: puerta (2)
@@ -743,6 +747,10 @@ PrefabInstance:
     - target: {fileID: 9058884509144430889, guid: 9c6e247ad132384418972aac637350d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058884510061538798, guid: 9c6e247ad132384418972aac637350d4, type: 3}
+      propertyPath: m_TagString
+      value: Puerta
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c6e247ad132384418972aac637350d4, type: 3}
@@ -1502,7 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 725780a3e6a634247a02a497d7942193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objeto: {fileID: 6787488930634975345, guid: b940c3ad7619feb448605094bbeec1d8, type: 3}
+  objeto: {fileID: 2206483904282848119, guid: e506d5a025b770c47b55099fb5e50466, type: 3}
   timer: 0
   timeToSpawn: 6
   aux: {fileID: 0}
@@ -2671,7 +2679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 725780a3e6a634247a02a497d7942193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objeto: {fileID: 6787488930634975345, guid: b940c3ad7619feb448605094bbeec1d8, type: 3}
+  objeto: {fileID: 2206483904282848119, guid: e506d5a025b770c47b55099fb5e50466, type: 3}
   timer: 0
   timeToSpawn: 6
   aux: {fileID: 0}
@@ -2687,6 +2695,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1484088388}
     m_Modifications:
+    - target: {fileID: 662414601808709727, guid: 9c6e247ad132384418972aac637350d4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9058884509144430888, guid: 9c6e247ad132384418972aac637350d4, type: 3}
       propertyPath: m_Name
       value: puerta (1)
@@ -2734,6 +2746,10 @@ PrefabInstance:
     - target: {fileID: 9058884509144430889, guid: 9c6e247ad132384418972aac637350d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058884510061538798, guid: 9c6e247ad132384418972aac637350d4, type: 3}
+      propertyPath: m_TagString
+      value: Puerta
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c6e247ad132384418972aac637350d4, type: 3}
@@ -3401,7 +3417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 725780a3e6a634247a02a497d7942193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objeto: {fileID: 8289599043282542441, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+  objeto: {fileID: 2206483904282848119, guid: e506d5a025b770c47b55099fb5e50466, type: 3}
   timer: 0
   timeToSpawn: 6
   aux: {fileID: 0}
@@ -3799,7 +3815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 725780a3e6a634247a02a497d7942193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objeto: {fileID: 6787488930634975345, guid: b940c3ad7619feb448605094bbeec1d8, type: 3}
+  objeto: {fileID: 2206483904282848119, guid: e506d5a025b770c47b55099fb5e50466, type: 3}
   timer: 0
   timeToSpawn: 5
   aux: {fileID: 0}
@@ -4058,6 +4074,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1484088388}
     m_Modifications:
+    - target: {fileID: 662414601808709727, guid: 9c6e247ad132384418972aac637350d4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9058884509144430888, guid: 9c6e247ad132384418972aac637350d4, type: 3}
       propertyPath: m_Name
       value: puerta (3)
@@ -4105,6 +4125,10 @@ PrefabInstance:
     - target: {fileID: 9058884509144430889, guid: 9c6e247ad132384418972aac637350d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058884510061538798, guid: 9c6e247ad132384418972aac637350d4, type: 3}
+      propertyPath: m_TagString
+      value: Puerta
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c6e247ad132384418972aac637350d4, type: 3}
@@ -5319,6 +5343,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1484088388}
     m_Modifications:
+    - target: {fileID: 662414601808709727, guid: 9c6e247ad132384418972aac637350d4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381837940390220904, guid: 9c6e247ad132384418972aac637350d4, type: 3}
+      propertyPath: onEnter.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381837940390220904, guid: 9c6e247ad132384418972aac637350d4, type: 3}
+      propertyPath: onEnter.Array.data[0].tag
+      value: estudiante
+      objectReference: {fileID: 0}
     - target: {fileID: 9058884509144430888, guid: 9c6e247ad132384418972aac637350d4, type: 3}
       propertyPath: m_Name
       value: puerta
@@ -5367,7 +5403,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9058884510061538798, guid: 9c6e247ad132384418972aac637350d4, type: 3}
+      propertyPath: m_TagString
+      value: Puerta
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2381837940390220904, guid: 9c6e247ad132384418972aac637350d4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9c6e247ad132384418972aac637350d4, type: 3}
 --- !u!1 &1901070908
 GameObject:
@@ -6532,5 +6573,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLayer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9041182254784941467, guid: 42a860c577b1a394b86145a73fbf0bfd, type: 3}
+    - {fileID: 9041182254784941464, guid: 42a860c577b1a394b86145a73fbf0bfd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 42a860c577b1a394b86145a73fbf0bfd, type: 3}
