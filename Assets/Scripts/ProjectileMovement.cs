@@ -35,5 +35,7 @@ public class ProjectileMovement : MonoBehaviour
             default:
                 break;
         }
+
+        Destroy(gameObject, 3f);
     }
 }
