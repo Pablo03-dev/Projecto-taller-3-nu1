@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static int felicidad = 0;
+    public static GameManager manager;
+
+    private void Awake()
+    {
+        manager = this;
+    }
+
+    public int vidas;
    public void GameOver()
     {
         print("EndGame");
@@ -20,4 +27,15 @@ public class GameManager : MonoBehaviour
     {
 
     }
+
+    public void QuitarVidas()
+    {
+        vidas--;
+
+        if(vidas < 1)
+        {
+            GameOver();
+        }
+    }
+
 }

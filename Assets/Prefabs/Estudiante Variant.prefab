@@ -81,6 +81,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.data[1].tag
+      value: Nota
+      objectReference: {fileID: 0}
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.data[1].eventos.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.data[1].eventos.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.data[0].eventos.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8815132409706051908}
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.data[1].eventos.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8815132409706051908}
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.data[1].eventos.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.data[0].eventos.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChequearNota
+      objectReference: {fileID: 0}
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.data[1].eventos.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AsignarNota
+      objectReference: {fileID: 0}
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.data[0].eventos.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Estudiante, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.data[1].eventos.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Estudiante, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -1751254869222415382, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
+      propertyPath: onEnter.Array.data[1].eventos.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8289599043282542440, guid: cd73283a6c46dc34c82cd29994dd4f60, type: 3}
       propertyPath: m_RootOrder
       value: 0
