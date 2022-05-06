@@ -22,9 +22,10 @@ public class PlayerShoot : MonoBehaviour
     public IEnumerator ShootCor()
     {
         canShoot = false;
+        Audiomanager.PlaySound("Lanzar");
         Instantiate(projectile, aim.position, aim.rotation);
         yield return new WaitForSeconds(cooldownTime);
         canShoot = true;
-        Audiomanager.PlaySound("Lanzar");
+       // Audiomanager.PlaySound("Lanzar");
     }
 }
