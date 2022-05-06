@@ -5,6 +5,7 @@ using UnityEngine;
 public class Estudiante : MonoBehaviour
 {
     public bool tieneNota = false;
+   
     public void AsignarNota()
     {
         tieneNota = true;
@@ -16,7 +17,19 @@ public class Estudiante : MonoBehaviour
         {
             GameManager.manager.QuitarVidas();
         }
+        else
+        {
+            GameManager.manager.AddScore(10);
+        }
 
+        Invoke("DesactEstudiante", 0.3f);
+       
+
+
+    }
+
+    void DesactEstudiante()
+    {
         gameObject.SetActive(false);
     }
 

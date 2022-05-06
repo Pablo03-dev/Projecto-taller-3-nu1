@@ -8,9 +8,13 @@ public class GameManager : MonoBehaviour
     public static GameManager manager;
 
     public Slider barrahp;
+    private int score;
+    public Text scoreText;
     private void Awake()
     {
         manager = this;
+        score = 0;
+        UpdatedScore();
     }
 
     public int vidas;
@@ -32,13 +36,24 @@ public class GameManager : MonoBehaviour
 
     public void QuitarVidas()
     {
-        barrahp.value = vidas;
         vidas--;
+        barrahp.value = vidas;
 
         if(vidas < 1)
         {
             GameOver();
         }
+    }
+
+    void UpdatedScore()
+    {
+        scoreText.text = "Score: " + score;
+    }
+
+    public void AddScore(int puntajesumaar)
+    {
+        score += puntajesumaar;
+        UpdatedScore();
     }
 
 }
