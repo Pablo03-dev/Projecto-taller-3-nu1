@@ -5,7 +5,7 @@ using UnityEngine;
 public class Audiomanager : MonoBehaviour
 {
     public static AudioClip FireSound;
-    //public static AudioClip enemyDeathSound;
+    public static AudioClip HappySound;
     //public static AudioClip coinInsertSound;
     //public static AudioClip powerupSound;
     //public static AudioClip impactSound;
@@ -16,7 +16,7 @@ public class Audiomanager : MonoBehaviour
     void Start()
     {
         FireSound = Resources.Load<AudioClip>("Lanzar");
-    //    enemyDeathSound = Resources.Load<AudioClip>("enemyDeath");
+        HappySound = Resources.Load<AudioClip>("Yahoo");
     //    coinInsertSound = Resources.Load<AudioClip>("Coinintro");
     //    powerupSound = Resources.Load<AudioClip>("Power up");
     //    impactSound = Resources.Load<AudioClip>("impacto");
@@ -38,9 +38,9 @@ public class Audiomanager : MonoBehaviour
             case "Lanzar": audioScr.PlayOneShot(FireSound);
                 break;
 
-    //        case "enemyDeath":
-    //            audioScr.PlayOneShot(enemyDeathSound);
-    //            break;
+            case "Yahoo":
+                audioScr.PlayOneShot(HappySound);
+                break;
 
     //        case "Coinintro":
     //            audioScr.PlayOneShot(coinInsertSound);
