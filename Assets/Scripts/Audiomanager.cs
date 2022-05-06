@@ -15,7 +15,7 @@ public class Audiomanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FireSound = Resources.Load<AudioClip>("Lanzamiento");
+        FireSound = Resources.Load<AudioClip>("Lanzar");
     //    enemyDeathSound = Resources.Load<AudioClip>("enemyDeath");
     //    coinInsertSound = Resources.Load<AudioClip>("Coinintro");
     //    powerupSound = Resources.Load<AudioClip>("Power up");
@@ -35,7 +35,7 @@ public class Audiomanager : MonoBehaviour
     {
         switch (clip)
         {
-            case "fire": audioScr.PlayOneShot(FireSound);
+            case "Lanzar": audioScr.PlayOneShot(FireSound);
                 break;
 
     //        case "enemyDeath":

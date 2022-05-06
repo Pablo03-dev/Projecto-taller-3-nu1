@@ -12,7 +12,7 @@ public class PlayerShoot : MonoBehaviour
 
     void Update()
     {
-        //Audiomanager.PlaySound("Lanzamiento");
+        
         if (Input.GetKeyDown(shootKey) && canShoot)
         {
             StartCoroutine(ShootCor());
@@ -25,6 +25,6 @@ public class PlayerShoot : MonoBehaviour
         Instantiate(projectile, aim.position, aim.rotation);
         yield return new WaitForSeconds(cooldownTime);
         canShoot = true;
-        
+        Audiomanager.PlaySound("Lanzar");
     }
 }
