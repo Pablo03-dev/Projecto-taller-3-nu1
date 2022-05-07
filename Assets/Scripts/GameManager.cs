@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Slider barrahp;
     private int score;
     public Text scoreText;
+
+    public GameoverScreen GameOverScreen;
     private void Awake()
     {
         manager = this;
@@ -21,6 +23,7 @@ public class GameManager : MonoBehaviour
    public void GameOver()
     {
         print("EndGame");
+        GameOverScreen.Setup(score);
     }
 
 
@@ -42,6 +45,7 @@ public class GameManager : MonoBehaviour
         if(vidas < 1)
         {
             GameOver();
+            //Over.Show();
         }
     }
 
