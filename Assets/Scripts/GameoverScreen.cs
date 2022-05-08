@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameoverScreen : MonoBehaviour
 {
     public Text pointsText;
+    private bool juegoPausado = false;
 
     public void Setup(int score)
     {
@@ -22,5 +23,19 @@ public class GameoverScreen : MonoBehaviour
     public void ExittButton()
     {
         SceneManager.LoadScene("Menu Principal");
+    }
+
+    private void Update()
+    {
+        if (juegoPausado)
+        {
+            Pausa();
+        }
+    }
+    public void Pausa()
+    {
+        juegoPausado = true;
+        Time.timeScale = 0f;
+        
     }
 }
