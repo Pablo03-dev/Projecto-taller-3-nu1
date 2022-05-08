@@ -18,12 +18,14 @@ public class movrieles : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.RightArrow) )
         {
+            Audiomanager.PlaySound("Pisada");
             nuevapos.x += distanciaRiel;
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-           nuevapos.x -= distanciaRiel;
+            Audiomanager.PlaySound("Pisada");
+            nuevapos.x -= distanciaRiel;
         }
 
         nuevapos.x = Mathf.Clamp(nuevapos.x, 0, distanciaMax);
