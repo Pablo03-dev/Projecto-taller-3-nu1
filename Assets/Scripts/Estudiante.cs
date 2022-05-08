@@ -15,6 +15,7 @@ public class Estudiante : MonoBehaviour
     {
         if(tieneNota == false)
         {
+            Audiomanager.PlaySound("Fail");
             GameManager.manager.QuitarVidas();
         }
         else

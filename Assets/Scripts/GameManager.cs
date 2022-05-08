@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public Slider barrahp;
     private int score;
     public Text scoreText;
-
+    //private bool juegoPausado = false;
     public GameoverScreen GameOverScreen;
     private void Awake()
     {
@@ -57,7 +57,23 @@ public class GameManager : MonoBehaviour
     public void AddScore(int puntajesumaar)
     {
         score += puntajesumaar;
+        Audiomanager.PlaySound("Coin");
         UpdatedScore();
     }
+
+    //private void Update()
+    //{
+    //    if (juegoPausado)
+    //    {
+    //        Pausa();
+    //    }
+    //}
+    //public void Pausa()
+    //{
+    //    juegoPausado = true;
+    //    Time.timeScale = 0f;
+    //    //botonPausa.SetActive(false);
+    //    //menuPausa.SetActive(true);
+    //}
 
 }

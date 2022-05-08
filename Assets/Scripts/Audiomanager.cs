@@ -7,8 +7,8 @@ public class Audiomanager : MonoBehaviour
     public static AudioClip FireSound;
     public static AudioClip HappySound;
     public static AudioClip StepSound;
-    //public static AudioClip powerupSound;
-    //public static AudioClip impactSound;
+    public static AudioClip PointSound;
+    public static AudioClip FailSound;
     //public static AudioClip healSound;
 
     static AudioSource audioScr;
@@ -18,8 +18,8 @@ public class Audiomanager : MonoBehaviour
         FireSound = Resources.Load<AudioClip>("Lanzar");
         HappySound = Resources.Load<AudioClip>("Yahoo");
         StepSound = Resources.Load<AudioClip>("Pisada");
-    //    powerupSound = Resources.Load<AudioClip>("Power up");
-    //    impactSound = Resources.Load<AudioClip>("impacto");
+        PointSound = Resources.Load<AudioClip>("Coin");
+        FailSound = Resources.Load<AudioClip>("Fail");
     //    healSound = Resources.Load<AudioClip>("Powerup 2");
 
        audioScr = GetComponent<AudioSource>();
@@ -46,13 +46,13 @@ public class Audiomanager : MonoBehaviour
                 audioScr.PlayOneShot(StepSound);
                 break;
 
-    //        case "Power up":
-    //            audioScr.PlayOneShot(powerupSound);
-    //            break;
+            case "Coin":
+                audioScr.PlayOneShot(PointSound);
+                break;
 
-    //        case "impacto":
-    //            audioScr.PlayOneShot(impactSound);
-    //            break;
+            case "Fail":
+                audioScr.PlayOneShot(FailSound);
+                break;
 
     //        case "Powerup 2":
     //            audioScr.PlayOneShot(healSound);
