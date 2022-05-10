@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Slider barrahp;
     private int score;
     public Text scoreText;
+
+    public float timer = 10;
     //private bool juegoPausado = false;
     public GameoverScreen GameOverScreen;
     private void Awake()
@@ -59,6 +61,11 @@ public class GameManager : MonoBehaviour
         score += puntajesumaar;
         Audiomanager.PlaySound("Coin");
         UpdatedScore();
+    }
+
+    private void Update()
+    {
+        timer = Time.deltaTime + timer;
     }
 
     //private void Update()

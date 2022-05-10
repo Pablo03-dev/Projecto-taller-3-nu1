@@ -8,10 +8,18 @@ public class Follow : MonoBehaviour
     private float speed;
     [SerializeField]
     private Transform target;
+    public void Evaluado(float newspeed)
+    {
+        speed = newspeed;
+    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        speed = 1;
+        if(GameManager.manager.timer > 10)
+        {
+            speed = GameManager.manager.timer / 10;
+        }
     }
 
     // Update is called once per frame

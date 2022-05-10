@@ -34,4 +34,9 @@ public class Estudiante : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    private void Start()
+    {
+        
+    }
+
 }
