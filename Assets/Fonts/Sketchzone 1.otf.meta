@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 723e09952321809409e939a9936f0c00
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Sketchzone
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a97a87e544cdb59479ee5554f5e481d5, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
